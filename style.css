@@ -139,6 +139,14 @@ main section {
     font-weight: 700;
 }
 
+.funny-videos {
+    font-weight: 800;
+    background: #CF11C2;
+    background: linear-gradient(to top, #CF11C2 37%, #6348CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 
 .section-description {
     margin-bottom: 25px;
@@ -147,54 +155,77 @@ main section {
     font-size: 18px;
 }
 
-#video-description {
+#video-section {
     padding: 30px 150px;
 }
 
-/* .videos-container {
-    display: flex;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
- */
+ .watch-now {
+        width: 100%;
+    }
 
-.container {
+  .watch-now .container {
+    padding-top: 10px;
+  }
+
+  .watch-now .container .hover-section {
     width: 100%;
-    min-height: 20px;
+    padding: 0px 9px;
+    min-height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 90px;
-}
+    /* width: 80%; */
+    margin: 0px auto;
+    grid-gap: 20px;
+ 
+  }
 
-.videos-container {
+  .watch-now .container .hover-section .gallery {
+    position: relative;
+    width: 100%;
+  }
+
+  .watch-now .container .hover-section .gallery .image-section {
+    width: 100%;
+  }
+  .watch-now .container .hover-section .gallery .image-section img {
+    height: auto;
+    width: 100%;
+    padding: 1px;
+    display: block;
+  }
+
+  .watch-now .container .hover-section .gallery .caption {
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    flex-direction: column;
+    background: rgba(14, 13, 13, 0.5);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
-.videos-container .card {
-    flex: 1;
-    margin: 20px 20px;
-}
+  .watch-now .container .hover-section .gallery .caption:hover {
+    opacity: 1;
+  }
 
-.videos-container .card img {
-    width: 100%;
-    height: auto;
-}
+  .watch-now .container .hover-section .gallery .caption p {
+    font-size: 10px;
+  }
 
-.video-description {
+  .video-description {
+    text-align: center;
+    color: #534C64;
     margin: 15px 0px;
     font-size: 0.8rem;
     text-align: left;
-}
-
-.funny-videos {
-    background: #CF11C2;
-    background: linear-gradient(to top, #CF11C2 37%, #6348CF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
+  }
